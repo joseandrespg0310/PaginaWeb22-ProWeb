@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo general del body */
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        }
+
+        /* Contenedor principal usando Grid */
+        .container {
+            display: grid; 
+            grid-template-columns: 1fr 3fr; 
+            gap: 20px;
+            max-width: 1200px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            background-color: white; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            grid-column: 1 / -1; 
+            background-color: #2196F3; 
+            color: white; 
+            padding: 20px; 
+            text-align: center;
+            border-radius: 8px; 
+        }
+
+        /* Estilo para la sección principal */
+        .main {
+            display: flex; 
+            flex-direction: column;
+            gap: 20px;
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 20px;
+            border-radius: 8px; 
+        }
+
+        /* Estilo para la barra lateral */
+        .sidebar {
+            background-color: #FFC107; 
+            color: black; 
+            padding: 20px; 
+            border-radius: 8px; 
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            grid-column: 1 / -1;
+            padding: 10px 20px;
+            background-color: #333; 
+            color: white; 
+            text-align: center; 
+            border-radius: 8px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mi Página Web</h1>
+        </header>
+
+        <div class="main">
+            <h2>Contenido Principal</h2>
+            <p>Bienvenido a mi página web. Aquí encontrarás información relevante sobre mis proyectos y actividades.</p>
+            <p>Este es un ejemplo de cómo combinar Grid y Flexbox para crear una página web organizada.</p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Barra Lateral</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <span>&copy; 2024 Mi Página Web</span>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://pbs.twimg.com/media/GARZJ1XWEAAxep3?format=jpg&name=4096x4096);
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, #ff007f, #00ffb3);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(255, 0, 127, 0.7);
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00ffb3;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 0 0 20px rgba(255, 0, 127, 0.7);
+        }
+        h2 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            text-shadow: 0 0 15px rgba(0, 255, 179, 0.7);
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            padding: 0 20px;
+            
+        }
+        .game-city {
+            background: rgba(255, 0, 127, 0.1);
+            border: 2px solid #ff007f;
+       
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            color:#0a0908 ;
+            text-shadow: 0 0 20px rgb(250, 250, 250);
+            font-weight: 600;
+            font-size: 19px;
+            background-position: 50%;
+            background-image: url(https://wallpapers.com/images/hd/gta-vc-4dpvck4zsy6v0l0a.jpg);
+            
+        }
+        .game-city:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 127, 1);
+        }
+        .game-Andreas {
+            background: rgba(255, 0, 127, 0.1);
+            border: 2px solid #ff007f;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            background-size: 100%;
+            color:darkviolet;
+            text-shadow: 0 0 20px rgb(250, 250, 250);
+            font-weight: 600;
+            font-size: 19px;
+            background-image: url(https://assets-prd.ignimgs.com/2022/01/07/gta-san-andreas-collage-button2-1641589094079.jpg);
+            
+        }
+        .game-Andreas:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 127, 1);
+        }
+        .game-3 {
+            background: rgba(255, 0, 127, 0.1);
+            border: 2px solid #ff007f;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            color:forestgreen ;
+            text-shadow: 0 0 20px rgb(250, 250, 250);
+            font-weight: 600;
+            font-size: 19px;
+            background-size: 100%;
+            background-image: url(https://cdn.cdkeys.com/700x700/media/catalog/product/g/r/grand_theft_auto_iii_pc.jpg);
+            
+        }
+        .game-3:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 127, 1);
+        }
+        .game-5 {
+            background: rgba(255, 0, 127, 0.1);
+            border: 2px solid #ff007f;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            color:#0a0908 ;
+            text-shadow: 0 0 20px rgb(250, 250, 250);
+            font-weight: 600;
+            font-size: 19px;
+            background-size: 100%;
+            background-image: url(https://dukaan.b-cdn.net/700x700/webp/3647129/0f48e63a-ce35-4429-92e3-7b3bd127e8a1/1660299704731-175636bd-1356-4232-b343-30bc81e88ff1.jpeg/44290758-60e4-4b8e-9dac-db506e041c13.jpeg);
+            
+        }
+        .game-5:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 127, 1);
+        }
+        .game-6 {
+            background: rgba(255, 0, 127, 0.1);
+            border: 2px solid #ff007f;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            color:greenyellow ;
+            text-shadow: 0 0 20px rgb(250, 250, 250);
+            font-weight: 600;
+            font-size: 19px;
+            
+            background-size: 100%;
+            background-image: url(https://holatelcel.com/wp-content/uploads/2022/09/GTA-VI-.png);
+            
+        }
+        .game-6:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 127, 1);
+        }
+        button {
+            background: #00ffb3;
+            border: none;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #00cc99;
+        }
+        footer {
+            background: #333;
+            color: #ffffff;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) { /* Tablets */
+            header {
+                padding: 15px; /* Ajuste de espaciado */
+            }
+            nav ul li {
+                margin: 0 5px; /* Espaciado más ajustado */
+            }
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+            }
+        }
+        @media (max-width: 480px) { /* Celulares */
+            header {
+                padding: 10px; /* Ajuste de espaciado */
+            }
+            nav ul {
+                flex-direction: column; /* Cambiar a columna en móviles */
+                align-items: center; /* Centrar elementos */
+            }
+            header h1{
+                flex-direction: column; /* Cambiar a columna en móviles */
+                align-items: center; /* Centrar elementos */
+            }
+            nav ul li {
+                margin: 5px 0; /* Espaciado vertical en móviles */
+            }
+            .games-grid {
+                grid-template-columns: 1fr; /* Una columna en móviles */
+            }
+            .game-city{
+                background: rgba(255, 0, 127, 0.1);
+                border: 2px solid #ff007f;
+                border-radius: 10px;
+                padding: 20px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            
+            }
+            .game-Andreas{
+                background: rgba(255, 0, 127, 0.1);
+                border: 2px solid #ff007f;
+                border-radius: 10px;
+                padding: 20px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            }
+            .game-3{
+                background: rgba(255, 0, 127, 0.1);
+                border: 2px solid #ff007f;
+                border-radius: 10px;
+                padding: 20px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            }
+            .game-5{
+                background: rgba(255, 0, 127, 0.1);
+                border: 2px solid #ff007f;
+                border-radius: 10px;
+                padding: 20px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            }
+            .game-6{
+                background: rgba(255, 0, 127, 0.1);
+                border: 2px solid #ff007f;
+                border-radius: 10px;
+                padding: 20px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+            }
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GAME ZONE:ROCKSTAR GAME</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#games">Juegos</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Últimos Lanzamientos</h2>
+            <p>¡Descubre los últimos juegos que han salido al mercado!</p>
+        </section>
+
+        <section id="games">
+            <h2>Juegos Destacados</h2>
+            <div class="games-grid">
+                <div class="game-city">
+                    <h3>GTA Vice City</h3>
+                    <p>Es la ciudad digital más variada, completa y viva que se haya creado jamás. Con una combinación de juego no lineal y una historia basada en personajes realistas, entrarás en una ciudad rebosante de placeres y degradación, en la que tú decides lo que quieres hacer en cada momento.</p>
+                    <button onclick="alert('¡Agregado a tu lista!')">Agregar a Favoritos</button>
+                </div>
+                <div class="game-Andreas">
+                    <h3>GTA San Andreas</h3>
+                    <p>Hace cinco años Carl Johnson huyó de los rigores de vivir en Los Santos, San Andreas, una ciudad destrozada por las bandas, las drogas y la corrupción en la que las estrellas de cine y los millonarios hacen lo posible por evitar a los traficantes y a los pandilleros.</p>
+                    <button onclick="alert('¡Agregado a tu lista!')">Agregar a Favoritos</button>
+                </div>
+                <div class="game-3">
+                    <h3>GTA 3</h3>
+                    <p>Bienvenido a Liberty City, donde empezó todo. Grand Theft Auto III, el exitoso juego aclamado por la crítica, llena de vida los oscuros y sórdidos bajos mundos de Liberty City. Con un mundo abierto enorme y diverso, una variedad de personajes y la libertad de explorar a voluntad, Grand Theft Auto III pone el oscuro, misterioso y despiadado mundo del crimen a tu alcance.</p>
+                    <button onclick="alert('¡Agregado a tu lista!')">Agregar a Favoritos</button>
+                </div>
+                <div class="game-5">
+                    <h3>GTA 5</h3>
+                    <p>Un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se ven involucrados con lo peor y más desquiciado del mundo criminal, del gobierno de los EE. UU. y de la industria del espectáculo, y tendrán que llevar a cabo una serie de peligrosos golpes para sobrevivir en una ciudad implacable en la que no pueden confiar en nadie. Y mucho menos los unos en los otros.</p>
+                    <button onclick="alert('¡Agregado a tu lista!')">Agregar a Favoritos</button>
+                </div>
+                <div class="game-6">
+                    <h3>GTA 6</h3>
+                    <p>PROXIMAMENTE</p>
+                    <button onclick="alert('¡Agregado a tu lista!')">Agregar a Favoritos</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de entusiastas de los videojuegos dedicados a traer lo mejor del mundo gamer.</p>
+        </section>
+
+     
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RockstarGame. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Flexbox y Grid</title>
+    <style>
+        /* Estilo para el contenedor principal usando Grid */
+        .container {
+            display: grid; /* Activa Grid Layout */
+            grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+            gap: 10px; /* Espacio entre los elementos de la cuadrícula */
+            padding: 20px; /* Espacio interno del contenedor */
+        }
+
+        /* Estilo para los elementos dentro del contenedor */
+        .item {
+            background-color: #4CAF50; /* Color de fondo verde */
+            color: white; /* Color del texto en blanco */
+            padding: 20px; /* Espacio interno de los elementos */
+            text-align: center; /* Centra el texto horizontalmente */
+        }
+
+        /* Estilo para una fila que usa Flexbox */
+        .flex-row {
+            display: flex; /* Activa Flexbox */
+            justify-content: space-between; /* Espacio igual entre los elementos */
+            margin-top: 20px; /* Espacio superior de la fila */
+        }
+
+        /* Estilo para los elementos dentro de la fila flex */
+        .flex-item {
+            background-color: #2196F3; /* Color de fondo azul */
+            padding: 10px; /* Espacio interno de los elementos flex */
+            flex: 1; /* Cada elemento flex ocupa el mismo espacio */
+            margin: 0 5px; /* Espacio lateral entre los elementos */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+        <div class="item">Elemento 4</div>
+        <div class="item">Elemento 5</div>
+        <div class="item">Elemento 6</div>
+    </div>
+
+    <div class="flex-row">
+        <div class="flex-item">Flex 1</div>
+        <div class="flex-item">Flex 2</div>
+        <div class="flex-item">Flex 3</div>
+    </div>
+
+</body>
+</html>

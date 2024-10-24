@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            border-bottom: 2px solid black;
+            text-align: center;
+            display: flex;
+            background-color: black;
+            height: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px;
+        }
+.logo,.nav,.user-info{
+    color: white;
+    padding: 5px
+}
+a{
+    justify-content: space-between;
+}
+.main{
+height: 300px;
+display: flex;
+padding: 40px
+;
+
+padding-bottom: 25px;
+
+}
+.content{
+    background-color:gray;
+    flex-basis: 200px;
+    padding: 10px;
+}
+.sidebar{
+    background-color: lightgray;
+    flex-basis: 200px;
+    padding: 10px;
+}
+.item-1{
+flex-grow: 5;
+}
+.item-2{
+flex-grow: 1;
+}
+.footer{
+    background-color: black;
+
+}
+.footer p{
+    color: white;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Logo</div>
+        <nav class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="user-info">User Info</div>
+    </header>
+    <main class="main">
+        <section class="content item-1">Main content</section>
+        <aside class="sidebar item-2">Sibeda</aside>
+    </main>
+    <footer class="footer">
+        <p> Copy;2024 My website</p>
+    </footer>
+</body>
+</html>

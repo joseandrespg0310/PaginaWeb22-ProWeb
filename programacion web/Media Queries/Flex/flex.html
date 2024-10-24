@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 5px;
+            color: white;
+            flex-basis: 200px;
+        }
+        .container{
+            display: flex;
+
+
+           flex-direction: column;
+            align-items: stretch;
+        /*   justify-content: space-between;*/
+          width: 400px;
+          
+            
+            background-color: lightgrey;
+        }
+        .item-1{
+            flex-shrink: 1;
+        }
+        .item-2{
+            flex-shrink: 3;
+        }
+      
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="item item-1">Item 1</div>
+    <div class="item item-2 ">Item 2</div>
+    <div class="item ">Item 2</div>
+    
+   </div> 
+</body>
+</html>

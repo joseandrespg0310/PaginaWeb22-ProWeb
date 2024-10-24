@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo general del body */
+        body {
+            font-family: Arial, sans-serif; /* Tipo de fuente */
+            margin: 0; /* Elimina márgenes por defecto */
+            padding: 0; /* Elimina padding por defecto */
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+
+        /* Contenedor principal usando Grid */
+        .container {
+            display: grid; /* Activa Grid Layout */
+            grid-template-columns: 1fr 3fr; /* Dos columnas: 1/4 y 3/4 */
+            gap: 20px; /* Espacio entre las columnas */
+            max-width: 1200px; /* Ancho máximo del contenedor */
+            margin: 20px auto; /* Centra el contenedor en la página */
+            padding: 20px; /* Espacio interno del contenedor */
+            background-color: white; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        /* Estilo para la barra lateral */
+        .sidebar {
+            background-color: #2196F3; /* Color de fondo azul */
+            color: white; /* Color del texto en blanco */
+            padding: 20px; /* Espacio interno */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilo para el contenido principal */
+        .content {
+            background-color: #4CAF50; /* Color de fondo verde */
+            color: white; /* Color del texto en blanco */
+            padding: 20px; /* Espacio interno */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilo para el pie de página usando Flexbox */
+        footer {
+            display: flex; /* Activa Flexbox */
+            justify-content: space-between; /* Espacio entre los elementos */
+            padding: 10px 20px; /* Espacio interno */
+            background-color: #333; /* Fondo oscuro */
+            color: white; /* Color del texto en blanco */
+            margin-top: 20px; /* Margen superior */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilo para los enlaces del pie de página */
+        footer a {
+            color: white; /* Color de texto blanco */
+            text-decoration: none; /* Sin subrayado */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Barra Lateral</h2>
+            <p>Enlaces importantes</p>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Título Principal</h1>
+            <p>Bienvenido a mi página web. Aquí puedes encontrar información relevante.</p>
+            <p>Este es un ejemplo sencillo de cómo combinar Grid y Flexbox para crear una página web básica.</p>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; 2024 Mi Página Web</span>
+        <span><a href="#">Política de privacidad</a></span>
+    </footer>
+
+</body>
+</html>
